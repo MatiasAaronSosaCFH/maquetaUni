@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+    <header>
+        <div>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Cargar pasiente</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">PLanillas de alumnos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Salir</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+<main>
+    <div class="contain-form-main">
+        <form class=" ">
+            <div class="contain-input">
+                <label class="contain-label" for="">Fecha de Realizacion</label>
+                <input type="date" class="input">
+            </div>
+
+            <div class="contain-input">
+                <label class="contain-label" for="">ingresar su nombre</label>
+                <input type="text" class="input">
+            </div>
+
+            <div class="contain-input">
+                <label class="contain-label" for="">ingresar su apellido</label>
+                <input type="text" class="input">
+            </div>
+
+            <div class="contain-input">
+                <label class="contain-label" for="">Fecha de Nacimiento</label>
+                <input type="date" class="input">
+            </div>
+            
+            <div class="contain-input">
+                <label class="contain-label" for="">Nacionalidad</label>
+                <input type="text" class="input">
+            </div>
+
+            <div class="contain-input">
+                <label class="contain-label" for="">Edad</label>
+                <input type="text" class="input">
+            </div>
+
+            <div class="contain-input">
+                <label class="contain-label" for="">Estado civil</label>
+                <input type="text" class="input">
+            </div>
+
+            <div class="contain-input">
+                <label class="contain-label" for="">Cantidad de hijos</label>
+                <input type="number" class="input">
+            </div>
+
+            <div class="contain-input">
+                <label class="contain-label" for="">D.N.I/Pasaporte</label>
+                <input type="text" class="input">
+            </div>
+
+            <div class="contain-input">
+                <label class="contain-label" for="">Telefono</label>
+                <input type="text" class="input">
+            </div>
+
+            <div class="contain-input">
+                <label class="contain-label" for="">Domicilio</label>
+                <input type="text" class="input">
+            </div>
+
+            <div class="contain-input">
+                <label class="contain-label" for="">Localidad</label>
+                <input type="text" class="input">
+            </div>
+
+            <div class="contain-input">
+                <label class="contain-label" for="">Barrio</label>
+                <input type="text" class="input">
+            </div>
+
+            <div class="contain-input">
+                <label class="contain-label" for="">Ocupacion</label>
+                <input type="text" class="input">
+            </div>
+
+            <div class="contain-input">
+                <label class="contain-label" for="">CESAC</label>
+                <input type="text" class="input">
+            </div>
+            <!-- Agrega select -->
+            <div class="contain-input">                               
+                <select name="" value="" class="contain-select">
+                    <option class="input" value=" ">Nivel educativo</option>
+                    <option class="input" value="opcion2">Primario incompleto</option>
+                    <option class="input" value="opcion3">Primario completo</option>
+                    <option class="input" value="opcion4">Secundario incompleto</option>
+                    <option class="input" value="opcion5">Secundario completo</option>
+                    <option class="input" value="opcion6">Universitario incompleto</option>
+                    <option class="input" value="opcion7">Universitario completo</option>
+                    <option class="input" value="opcion6">Terciario</option>                 
+                </select>
+            </div>
+            <!-- check Enfermedades Cardiovasculares -->
+            <div class="contain-input">
+                <div class="contain-check">
+                    <div>
+                        
+                        <label for="enf_cardio">Enfermedades Cardiovasculares</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="enfermedades[]" id="hipertension" value="Hipertension arterial">
+                        <label for="hipertension">Hipertension arterial</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="enfermedades[]" id="enf_coronaria" value="Enfermedad coronaria">
+                        <label for="enf_coronaria">Enfermedad coronaria</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="enfermedades[]" id="insuficiencia" value="Insuficiencia Cardiaca">
+                        <label for="insuficiencia">Insuficiencia Cardiaca</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="enfermedades[]" id="arritmias" value="Arritmias">
+                        <label for="arritmias">Arritmias</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="enfermedades[]" id="chagas" value="Enfermedad de Chagas">
+                        <label for="chagas">Enfermedad de Chagas</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="enfermedades[]" id="otros" value="Otros">
+                        <label for="otros">Otros</label>
+                    </div>  
+                    <div class="contain-input">
+                        <label class="contain-label" for="">Aclaraciones de otros</label>
+                        <input type="text" class="input">
+                    </div>         
+                </div>  
+            </div>
+
+             <!-- check Enfermedades Respiratorias -->
+            <div class="contain-input">
+                <div class="contain-check">
+                    <div>
+                        <label for="enf_cardio">Enfermedades Respiratorias</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="enfermedades[]" id="hipertension" value="Hipertension arterial">
+                        <label for="hipertension">Asma</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="enfermedades[]" id="enf_coronaria" value="Enfermedad coronaria">
+                        <label for="enf_coronaria">EPOC  </label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="enfermedades[]" id="insuficiencia" value="Insuficiencia Cardiaca">
+                        <label for="insuficiencia">Bronquitis</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="enfermedades[]" id="arritmias" value="Arritmias">
+                        <label for="arritmias">Tuberculosis</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="enfermedades[]" id="otros" value="Otros">
+                        <label for="otros">Otros</label>
+                    </div>  
+                    <div class="contain-input">
+                        <label class="contain-label" for="">Aclaraciones de otros</label>
+                        <input type="text" class="input">
+                    </div>         
+                </div>    
+            </div>
+
+              <!-- check Enfermedades Endocrinologicas -->
+              <div class="contain-input">
+                <div class="contain-check">
+                    <div>
+                        <label for="enf_cardio">Enfermedades Endocrinologicas</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="enfermedades[]" id="hipertension" value="Hipertension arterial">
+                        <label for="hipertension">Diabetes</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="enfermedades[]" id="enf_coronaria" value="Enfermedad coronaria">
+                        <label for="enf_coronaria">Hipo/Hiper tiroidismo</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="enfermedades[]" id="otros" value="Otros">
+                        <label for="otros">Otros</label>
+                    </div>  
+                    <div class="contain-input">
+                        <label class="contain-label" for="">Aclaraciones de otros</label>
+                        <input type="text" class="input">
+                    </div>         
+                </div>  
+            </div>
+
+            <!-- check Enfermedades Gastroenterologicas -->
+            <div class="contain-input">
+                <div class="contain-check">
+                    <div>
+                        <label for="enf_cardio">Enfermedades Gastroenterologicas</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="enfermedades[]" id="hipertension" value="Hipertension arterial">
+                        <label for="hipertension">Gastritis/Ulceras</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="enfermedades[]" id="enf_coronaria" value="Enfermedad coronaria">
+                        <label for="enf_coronaria">Colon Irritable</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="enfermedades[]" id="insuficiencia" value="Insuficiencia Cardiaca">
+                        <label for="insuficiencia">Pancreatitis</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="enfermedades[]" id="arritmias" value="Arritmias">
+                        <label for="arritmias">Hepatitis</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" name="enfermedades[]" id="otros" value="Otros">
+                        <label for="otros">Otros</label>
+                    </div>  
+                    <div class="contain-input">
+                        <label class="contain-label" for="">Aclaraciones de otros</label>
+                        <input type="text" class="input">
+                    </div>         
+                </div>    
+            </div>
+
+             <!-- check Enfermedades Urinarias -->
+             <div class="contain-input">
+                <div class="contain-check">
+                    <div>
+                        <label for="enf_cardio">Enfermedades Urinarias</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="enfermedades[]" id="hipertension" value="Hipertension arterial">
+                        <label for="hipertension">Insuficiencia Renal</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="enfermedades[]" id="enf_coronaria" value="Enfermedad coronaria">
+                        <label for="enf_coronaria">Calculos Renales</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="enfermedades[]" id="insuficiencia" value="Insuficiencia Cardiaca">
+                        <label for="insuficiencia">Infeccion Urinaria</label>
+                    </div>      
+                    <div>
+                        <input type="checkbox" name="enfermedades[]" id="otros" value="Otros">
+                        <label for="otros">Otros</label>
+                    </div>  
+                    <div class="contain-input">
+                        <label class="contain-label" for="">Aclaraciones de otros</label>
+                        <input type="text" class="input">
+                    </div>         
+                </div>    
+            </div>
+
+            <!-- check Enfermedades de Transmision Sexual -->
+            <div class="contain-input">
+                <div class="contain-check">
+                    <div>
+                        <label for="enf_cardio">Enfermedades de Transmision Sexual</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="enfermedades[]" id="hipertension" value="Hipertension arterial">
+                        <label for="hipertension">HPV</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="enfermedades[]" id="enf_coronaria" value="Enfermedad coronaria">
+                        <label for="enf_coronaria">Sifilis</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="enfermedades[]" id="insuficiencia" value="Insuficiencia Cardiaca">
+                        <label for="insuficiencia">Herpes</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="enfermedades[]" id="arritmias" value="Arritmias">
+                        <label for="arritmias">Gonorrea</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="enfermedades[]" id="arritmias" value="Arritmias">
+                        <label for="arritmias">HIV/SIDA</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="enfermedades[]" id="otros" value="Otros">
+                        <label for="otros">Otros</label>
+                    </div>  
+                    <div class="contain-input">
+                        <label class="contain-label" for="">Aclaraciones de otros</label>
+                        <input type="text" class="input">
+                    </div>         
+                </div>    
+            </div>
+
+            <!-- check Otras enfermedades -->
+            <div class="contain-input">
+                <div class="contain-check">
+                    <div>
+                        <label for="enf_cardio">Otras enfermedades</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="enfermedades[]" id="hipertension" value="Hipertension arterial">
+                        <label for="hipertension">Cancer</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="enfermedades[]" id="enf_coronaria" value="Enfermedad coronaria">
+                        <label for="enf_coronaria">Neoplasias</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="enfermedades[]" id="insuficiencia" value="Insuficiencia Cardiaca">
+                        <label for="insuficiencia">alcoholismo</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="enfermedades[]" id="arritmias" value="Arritmias">
+                        <label for="arritmias">Otros tóxicos (marihuana, cocaina,…)</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="enfermedades[]" id="arritmias" value="Arritmias">
+                        <label for="arritmias">Anemias</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="enfermedades[]" id="arritmias" value="Arritmias">
+                        <label for="arritmias">Transfusiones de sangre</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="enfermedades[]" id="arritmias" value="Arritmias">
+                        <label for="arritmias">Operaciones</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="enfermedades[]" id="arritmias" value="Arritmias">
+                        <label for="arritmias">Artrosis/Artritis</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="enfermedades[]" id="otros" value="Otros">
+                        <label for="otros">Otros</label>
+                    </div>  
+                    <div class="contain-input">
+                        <label class="contain-label" for="">Aclaraciones de otros</label>
+                        <input type="text" class="input">
+                    </div>         
+                </div>    
+            </div>
+
+            <div class="contain-input">
+                <div class="contain-radioButton">
+                <label class="contain-label" for="">Tabaquismo</label>
+                <input type="radio" name="tabaquismo" value="Si"> Sí 
+                <input type="radio" name="tabaquismo" value="No"> No
+            </div>
+            </div>
+
+
+            <div class="contain-input">
+                <label class="contain-label" for="">Nº cigarrillos por día</label>
+                <input type="number" class="input">
+            </div>
+
+            <div class="contain-input">
+                <label class="contain-label" for="">¿Hace cuánto tiempo?</label>
+                <input type="text" class="input">
+            </div>
+
+            <div class="contain-input">
+                <label class="contain-label" for="">¿Hace cuánto dejó?</label>
+                <input type="text" class="input">
+            </div>
+
+
+            <div class="contain-input">
+                <div class="contain-radioButton">
+                <label class="contain-label" for="">tuvo covid?</label>
+                <input type="radio" name="tabaquismo" value="Si"> Sí 
+                <input type="radio" name="tabaquismo" value="No"> No
+            </div>
+            </div>
+
+            <div class="contain-input">
+                <label class="contain-label" for="">¿Hace cuánto tiempo?</label>
+                <input type="text" class="input">
+            </div>
+
+            <div class="contain-input">
+                <label class="contain-label" for="">Tuvo secuelas?</label>
+                <input type="text" class="input">
+            </div>
+
+            <div class="contain-input">
+                <label class="contain-label" for="">Esta Vacunado? Cuantas dosis? Cuales?</label>
+                <input type="text" class="input">
+            </div>
+
+            
+
+            <div class="contain-input">
+                <label class="contain-label" for="">Toma Medicacion? Nombre - Dosis - </label>
+                <input type="text" class="input">
+            </div>
+
+            <div class="contain-input">
+                <label class="contain-label" for="">Para que la toma</label>
+                <input type="text" class="input">
+            </div>
+
+            <div class="contain-input">
+                <h3>Antecedentes Familiares</h3>
+            </div>
+
+            <div class="contain-input">
+                <label class="contain-label" for="">Padre</label>
+                <input type="text" class="input">
+            </div>
+
+            <div class="contain-input">
+                <label class="contain-label" for="">Madre</label>
+                <input type="text" class="input">
+            </div>
+
+            <div class="contain-input">
+                <label class="contain-label" for="">Hermanos/as</label>
+                <input type="text" class="input">
+            </div>
+
+            <div class="contain-input">
+                <h3>Realiza Actividad Fisica?</h3>
+                <div class="contain-radioButton-fisc">
+                    <label>No realiza</label>
+                    <input type="radio" name="actividad" value="No realiza"> 
+                    <label>Menos de 3 veces por semana</label>
+                    <input type="radio" name="actividad" value="Menos de 3 veces por semana">
+                    <label>Más de tres veces por semana</label>
+                    <input type="radio" name="actividad" value="Más de tres veces por semana"> 
+                    <label>Diariamente</label>
+                    <input type="radio" name="actividad" value="Diariamente"> 
+            </div>
+            </div>
+
+            <div class="contain-input">
+                <label class="contain-label" for="">Que tipo de actiidad fisica realiza?</label>
+                <input type="text" class="input">
+            </div>
+
+            <div class="contain-input">
+                <label class="contain-label" for="">Talla</label>
+                <input type="text" class="input">
+            </div>
+
+            <div class="contain-input">
+                <label class="contain-label" for="">Peso</label>
+                <input type="text" class="input">
+            </div>
+
+            <div class="contain-input">
+                <label class="contain-label" for="">IMC</label>
+                <input type="text" class="input">
+            </div>
+
+            <div class="contain-input">
+                <h3>Aparato Cardiovascular</h3>
+            </div>
+
+            <div class="contain-input">
+                <label class="contain-label" for="">Frecuencia Cardiaca</label>
+                <input type="text" class="input">
+            </div>
+
+            <div class="contain-input">
+                <label class="contain-label" for="">Tension Arterial</label>
+                <input type="text" class="input">
+            </div>
+
+            <div class="contain-input">
+                <h3>Aparato Respiratorio</h3>
+            </div>
+
+            <div class="contain-input">
+                <label class="contain-label" for="">SpO2</label>
+                <input type="text" class="input">
+            </div>
+
+            <div class="contain-input">
+                <label class="contain-label" for="">Freacuencia Respiratoria</label>
+                <input type="text" class="input">
+            </div>
+
+            <div class="contain-input">
+                <h3>Glucemia</h3>
+            </div>
+
+
+            <div class="contain-input">
+                <label class="contain-label" for="">Valor</label>
+                <input type="text" class="input">
+            </div>
+
+            <div class="contain-input">
+                <label class="contain-label" for="">Tiempo de ayuno</label>
+                <input type="text" class="input">
+            </div>
+
+            <div class="contain-input">
+                <label class="contain-label" for="">Observaciones</label>
+                <input type="text" class="input">
+            </div>
+
+            <div class="contain-input">
+                <label class="contain-label" for="">Alumno/Medico Entrevistador</label>
+                <input type="text" class="input">
+            </div>
+        </form>
+    </div>
+</main>
+    
+</body>
+</html>

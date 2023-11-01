@@ -1,0 +1,79 @@
+body {
+    background-image: url('../img/homee.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.contain-form-main{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(237, 241, 241, 0.438) ;
+    width: 100%;
+       
+}
+
+.contain-input{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+ 
+
+.input{
+    border-radius: 20px;
+    width: 200px;
+    border: solid 1px silver;
+    transition: border-color 0.3s;
+    align-items: center;
+}
+
+input:focus {
+    border-color: orangered;
+    outline: none;
+}
+
+.contain-select{
+    border: solid 1px silver;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.contain-select:focus{
+    border-color: orangered;
+    outline: none;
+}
+
+
+.contain-check {
+    background-color: rgba(255, 68, 0, 0.589);
+    margin-top: 15px;
+    display: flex;
+    width: 300px;
+    text-align: left;
+    flex-direction: column;
+    padding-bottom: 15px;
+}
+
+.contain-radioButton{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contain-radioButton label{
+    margin-right: 10px;
+}
+
+.contain-radioButton input{
+    margin-left: 10px;
+}
+
+.contain-radioButton-fisc{
+    display: flex;
+    flex-direction: column;
+}
